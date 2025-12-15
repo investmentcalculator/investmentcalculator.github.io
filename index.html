@@ -28,26 +28,71 @@
     
     <!-- Schema Markup -->
     <script type="application/ld+json">
+[
     {
       "@context": "https://schema.org",
       "@type": "WebApplication",
       "name": "Investment Calculator",
       "url": "https://investmentcalculator.github.io/",
-      "description": "Free investment calculator to estimate your investment returns and plan your financial future.",
+      "description": "Free investment calculator to estimate your investment returns, visualize growth, and plan your financial future with confidence. Calculates compound interest and ROI with detailed projections.",
       "applicationCategory": "FinanceApplication",
       "operatingSystem": "Any",
+      "author": {
+        "@type": "Organization",
+        "name": "Investment Calculator"
+      },
       "offers": {
         "@type": "Offer",
         "price": "0",
         "priceCurrency": "USD"
-      },
-      "aggregateRating": {
-        "@type": "AggregateRating",
-        "ratingValue": "4.8",
-        "ratingCount": "1250"
+      },      
+      "softwareRequirements": {
+        "@type": "SoftwareApplication",
+        "softwareHelp": {
+          "@type": "CreativeWork",
+          "url": "contact.html"
+        }
       }
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "FinancialService",
+      "name": "Investment Calculator Service",
+      "description": "An online tool for calculating compound interest and projected investment returns.",
+      "provider": {
+        "@type": "Organization",
+        "name": "Investment Calculator"
+      },
+      "serviceType": "Financial Planning Tool",
+      "areaServed": "Worldwide",
+      "url": "https://investmentcalculator.github.io/"
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "HowTo",
+      "name": "How to Use the Investment Calculator",
+      "description": "Calculate your potential investment returns and visualize your wealth growth over time in three simple steps.",
+      "totalTime": "PT5M",
+      "step": [
+        {
+          "@type": "HowToStep",
+          "name": "Enter Your Details",
+          "text": "Input your initial investment amount, monthly contributions, and expected annual return rate."
+        },
+        {
+          "@type": "HowToStep",
+          "name": "Review Results",
+          "text": "Click 'Calculate Returns' and see detailed projections including total returns, final balance, and percentage gains."
+        },
+        {
+          "@type": "HowToStep",
+          "name": "Plan Your Future",
+          "text": "Use the insights and visual analytics to make informed decisions about your investment strategy."
+        }
+      ]
     }
-    </script>
+]
+</script>
     
     <link rel="stylesheet" href="styles.css">
 </head>
@@ -264,51 +309,38 @@
         </div>
     </section>
 
-    <!-- Testimonials Section -->
-    <section class="testimonials-section">
+    <!-- New Section -->
+    <section class="principles-section">
         <div class="container">
             <div class="section-header">
-                <h2 class="section-title">What Our Users Say</h2>
-                <p class="section-subtitle">Trusted by thousands of investors worldwide</p>
+                <h2 class="section-title">Key Investment Principles</h2>
+                <p class="section-subtitle">Understand the foundations of long-term wealth creation</p>
             </div>
-            <div class="testimonials-grid">
-                <div class="testimonial-card">
-                    <div class="testimonial-rating">⭐⭐⭐⭐⭐</div>
-                    <p class="testimonial-text">"This calculator helped me visualize my retirement goals. The interface is intuitive and the results are incredibly detailed. Highly recommend!"</p>
-                    <div class="testimonial-author">
-                        <div class="author-avatar">JS</div>
-                        <div class="author-info">
-                            <div class="author-name">Jessica Smith</div>
-                            <div class="author-title">Retired Teacher</div>
-                        </div>
-                    </div>
+            <div class="principles-grid">
+                <div class="principle-card">
+                    <div class="principle-icon">⏳</div>
+                    <h3 class="principle-title">The Power of Time</h3>
+                    <p class="principle-description">Starting early allows your investments to benefit from compounding for a longer duration, dramatically increasing final results.</p>
                 </div>
-                <div class="testimonial-card">
-                    <div class="testimonial-rating">⭐⭐⭐⭐⭐</div>
-                    <p class="testimonial-text">"Simple, powerful, and free! I use this calculator weekly to track my investment progress and adjust my strategy accordingly."</p>
-                    <div class="testimonial-author">
-                        <div class="author-avatar">MC</div>
-                        <div class="author-info">
-                            <div class="author-name">Michael Chen</div>
-                            <div class="author-title">Software Engineer</div>
-                        </div>
-                    </div>
+                <div class="principle-card">
+                    <div class="principle-icon">💸</div>
+                    <h3 class="principle-title">Consistent Contributions</h3>
+                    <p class="principle-description">Regular monthly investments, even small amounts, are a critical driver of growth and smooth out market volatility (Dollar-Cost Averaging).</p>
                 </div>
-                <div class="testimonial-card">
-                    <div class="testimonial-rating">⭐⭐⭐⭐⭐</div>
-                    <p class="testimonial-text">"Finally, a calculator that shows the real impact of compound interest and regular contributions. Game changer for my financial planning!"</p>
-                    <div class="testimonial-author">
-                        <div class="author-avatar">SP</div>
-                        <div class="author-info">
-                            <div class="author-name">Sarah Parker</div>
-                            <div class="author-title">Marketing Director</div>
-                        </div>
-                    </div>
+                <div class="principle-card">
+                    <div class="principle-icon">🛡️</div>
+                    <h3 class="principle-title">Diversification Matters</h3>
+                    <p class="principle-description">Spreading your investments across different asset classes helps reduce risk without necessarily lowering your potential returns.</p>
+                </div>
+                <div class="principle-card">
+                    <div class="principle-icon">📈</div>
+                    <h3 class="principle-title">Understanding Returns</h3>
+                    <p class="principle-description">A moderate, realistic expected annual return (like 7-10%) is often more sustainable than chasing extremely high-risk returns.</p>
                 </div>
             </div>
         </div>
     </section>
-
+    
     <!-- Footer -->
     <footer class="footer">
         <div class="footer-container">
@@ -339,7 +371,7 @@
                     </ul>
                 </div>
                 <div class="footer-widget">
-                    <h3 class="footer-title">More Tools</h3>
+                    <h3 class="footer-title">Coming Soon</h3>
                     <ul class="footer-links">
                         <li><a href="#calculator">Investment Calculator</a></li>
                         <li><a href="#">Retirement Calculator</a></li>
